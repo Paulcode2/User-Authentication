@@ -2,6 +2,8 @@ import React from 'react'
 import Back from '../assets/Back.png'
 import fb from '../assets/fb icon.png'
 import ig from '../assets/ig icon.png'
+import { Link } from 'react-router-dom'
+// import Register from './Register'
 
 const Welcome = () => {
   return (
@@ -27,10 +29,12 @@ const Welcome = () => {
           <small> login with email</small>
           </div>
 
+          <Link to='/register'>
           <button>Sign up</button>
+          </Link>
         </div>
         <div className="footer">
-          <p>You already have an account? <a href="#">Login</a></p>
+          <p>You already have an account? <Link to='/login'>Login</Link></p>
         </div>
       </div>
     </div>

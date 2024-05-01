@@ -3,6 +3,7 @@ import fb from '../assets/fb icon.png'
 import ig from '../assets/ig icon.png'
 import Back from '../assets/Back.png'
 import view from '../assets/image 1.png'
+import { Link } from 'react-router-dom'
 
 const Login = () => {
   return (
@@ -43,7 +44,7 @@ const Login = () => {
           </div>
         </div>
         <footer>
-        <p>You already have an account? <a href="#">Sign up</a></p>
+        <p>You already have an account? <Link to='/register'>Sign up</Link></p>
         </footer>
       </div>
     </div>
