@@ -45,10 +45,16 @@ const handleToggle = () => {
      setType('password')
   }
 }
+
+const handleBack = () =>{
+  navigate('../register')
+ }
   return (
 <div className='login'>
       <div className="circle">
+      <span onClick={handleBack}>
       <img src={Back} alt="" />
+      </span>
         <small>Login Now</small>
       </div>
       <div className="content">

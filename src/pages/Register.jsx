@@ -51,10 +51,16 @@ const Register = () => {
        setType('password')
     }
  }
+
+ const handleBack = () =>{
+  navigate('../')
+ }
   return (
     <div className='register'>
       <div className="circle">
+      <span onClick={handleBack}>
       <img src={Back} alt="" />
+      </span>
         <small>Sign Up</small>
       </div>
       <div className="content">
