@@ -127,7 +127,7 @@ body{
     }
   }
   .content{
-    margin-top: -1rem;
+    // margin-top: -1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -184,10 +184,11 @@ body{
           }
           .password{
             position: relative;
-            img{
+            .img{
               position: absolute;
-              left: 85%;
-              top: 29%;
+              left: 87%;
+              top: -8%;
+              color: black;
             }
             input{
               &::placeholder{
@@ -318,10 +319,11 @@ body{
           }
           .password{
             position: relative;
-            img{
+            .img{
               position: absolute;
-              left: 85%;
-              top: 29%;
+              left: 87%;
+              top: -8%;
+              color: black;
             }
             input{
               &::placeholder{

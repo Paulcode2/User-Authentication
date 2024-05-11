@@ -1,16 +1,17 @@
 import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
+import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCXPhYZXHNLS1lyOgLUO2sKRUYzh2oYDgc",
-  authDomain: "new-chat-c5018.firebaseapp.com",
-  projectId: "new-chat-c5018",
-  storageBucket: "new-chat-c5018.appspot.com",
-  messagingSenderId: "286516268347",
-  appId: "1:286516268347:web:c5ac8b7f5d770e64a1fb1e",
-  measurementId: "G-3LKWTNE42E"
+  apiKey: "AIzaSyA1cycdNpb3dnqLJ_BPllHWYTfTaxALGHs",
+  authDomain: "kaqil-1b952.firebaseapp.com",
+  projectId: "kaqil-1b952",
+  storageBucket: "kaqil-1b952.appspot.com",
+  messagingSenderId: "419123965901",
+  appId: "1:419123965901:web:595b6a2d9933453ad71e84",
+  measurementId: "G-63G0H937CD"
 };
 
 
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+
+export const app = initializeApp(firebaseConfig);
+export const auth =getAuth(app);
