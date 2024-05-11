@@ -90,10 +90,10 @@ const Register = () => {
             <Icon icon={icon} />
             </span>
             </div>
-            <div className="check">
+            {/* <div className="check">
             <input type="checkbox" />
             <span>I agree with privacy policy</span>
-            </div>
+            </div> */}
             <div className="btn">
             <button>Sign up</button>
             </div>
