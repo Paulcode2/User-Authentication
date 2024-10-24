@@ -2,14 +2,14 @@ import {useState} from 'react'
 import fb from '../assets/fb icon.png'
 import ig from '../assets/ig icon.png'
 import Back from '../assets/Back.png'
-import view from '../assets/image 1.png'
+// import view from '../assets/image 1.png'
 import { Link,useNavigate } from 'react-router-dom'
 import {  signInWithEmailAndPassword   } from 'firebase/auth';
 import { auth } from '../firebaseauth'
 import {eyeOff} from 'react-icons-kit/feather/eyeOff';
 import {eye} from 'react-icons-kit/feather/eye'
 import {Icon} from 'react-icons-kit';
-
+// import Reset from './Reset'
 
 const Login = () => {
 
@@ -49,6 +49,8 @@ const handleToggle = () => {
 const handleBack = () =>{
   navigate('../register')
  }
+
+
   return (
 <div className='login'>
       <div className="circle">
@@ -90,7 +92,9 @@ const handleBack = () =>{
             </div>
             <div className="check">
             <a href="#">
+            <Link to='/reset'>
             <span>Forget Password?</span>
+            </Link>
             </a>
             </div>
             <div className="btn">
